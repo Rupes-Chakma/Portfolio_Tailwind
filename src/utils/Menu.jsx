@@ -9,14 +9,19 @@ let menus = [
   { id: 5, title: 'Testimonial', path: '/testimonial' }
 ];
 
-const Menu = () => {
+const Menu = ({ menuData, togglerData }) => {
+
+  
   return (
     <div className='h-full'>
       <ul className='flex flex-col lg:flex-row gap-6 items-center justify-center h-full'>
         {
           menus.map((menu, index) => {
             return (
-              <li key={index} className="font-inter font-medium text-[16px] text-black leading-[145%] hover:text-[#00B760]">
+              <li 
+              onClick={() => togglerData(!menuData)} 
+              key={index}
+               className={`font-inter font-medium text-[16px] text-black leading-[145%] hover:text-[#00B760]`}>
 
                 <NavLink className={({ isActive }) => (isActive ? 'text-[#00b760]' : 'text-black')} to={menu.path} > {menu.title}</NavLink>
               </li>
