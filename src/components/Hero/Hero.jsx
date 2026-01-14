@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import Button from "../../utils/Button";
+import { RxArrowTopRight } from "react-icons/rx";
 const Hero = () => {
   return (
     <div className="container">
@@ -26,6 +27,7 @@ const Hero = () => {
             <Button
               style={`font-inter font-medium text-[16px] py-4 px-6 hover:bg-transparent hover:text-[#0DB720]`}
               title=" View Portfolio"
+              arrow={<RxArrowTopRight />}
             />
           </div>
         </div>
