@@ -22,3 +22,69 @@ body{
 .container {
     @apply max-w-[1350px] mx-auto px-4;
 }
+.dot-content{
+position: relative;
+}
+.dot-content .dot{
+
+    background-color: #00B720;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    position: absolute; 
+    z-index: 55;
+    transform: translate(-50%, -50%);   
+    box-shadow: 3px 3px 6px rgba(12, 37, 3, 0.679);
+    animation: dot 5s cubic-bezier(.48,.73,.81,.79) infinite;
+
+}
+/* @keyframes dot {
+    0% {
+       left: 100%;
+       top: 0;
+    }
+    25% {
+        top: 100%;
+       left: 100%;
+    }
+    50% {
+        top: 100%;
+       left: 0%;
+    }
+    100% {
+        top: 0;
+       right: 0;
+    }
+} */
+ 
+
+@keyframes dot {
+  0% {
+    top: 0;
+    left: 100%;
+    background-color: rebeccapurple;
+  }
+  25% {
+    top: 100%;
+    left: 100%;
+    background-color: orange;
+  }
+  50% {
+    top: 100%;
+    left: 0%;
+    background-color: yellow;
+  }
+  75% {
+    top: 0%;
+    left: 0%;
+    background-color: green;
+  }
+  100% {
+    top: 0%;
+    left: 100%;
+    background-color: rebeccapurple;
+  }
+} 

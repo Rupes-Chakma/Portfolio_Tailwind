@@ -5,6 +5,7 @@ import Menu from "../../utils/Menu";
 import { CgMenuRightAlt } from "react-icons/cg";
 import { MdOutlineClose } from "react-icons/md";
 
+
 const Navbar = () => {
 
     let [openMenu, setOpenMenu] = useState(false);
@@ -28,7 +29,8 @@ const Navbar = () => {
           <Menu />
         </div>
         {/* BUTTON OPTION */}
-        <div className="hidden lg:block">
+        <div className="hidden lg:block dot-content">
+          <span className="dot"></span>
           <Button
             style={`font-inter font-medium text-[16px] text-black leading-[145%] cursor-pointer rounded-md outline-1 outline-[#0DB760] py-4 px-6 shadow-md hover:bg-[#0DB760] hover:text-[white]`}
             title="Download CV"
@@ -43,7 +45,7 @@ const Navbar = () => {
       {/* RESPONSIVE MOBILE DEVICE */}
 
       <div className={`w-full h-screen bg-black/50 absolute top-0 left-0 lg:hidden -translate-x-[100%] ${openMenu ? "translate-x-0" : "-translate-x-full"} transition-all duration-200 ease-in-out`}>
-        <div className="w-[80%] bg-white 'max-w-[300px]' h-full relative">
+        <div className="w-[80%] bg-white 'max-w-[300px]' h-full relative"> 
           <Menu menuData={openMenu} togglerData={toggler} />
           <span onClick={toggler} className="absolute top-5 right-5 text-xl text-[#00B270] outline p-2 rounded">
             <MdOutlineClose />
