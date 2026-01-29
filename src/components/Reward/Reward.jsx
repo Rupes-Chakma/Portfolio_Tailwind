@@ -42,13 +42,13 @@ const Reward = () => {
   return (
     <div className="container mx-auto px-4">
       {/* মোবাইল এবং ট্যাবলেটের জন্য কলাম অ্যাডজাস্ট করা হয়েছে */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 py-12 px-6 bg-[#f9f9f9] rounded-3xl text-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 py-12 px-6 rounded-3xl text-center">
         {stats.map((item, index) => (
           <div
             key={item.id}
             className={`flex flex-col items-center justify-center ${
               // লাস্ট আইটেম বাদে বাকিগুলোর পাশে বড় স্ক্রিনে বর্ডার দেওয়ার জন্য
-              index !== stats.length - 1 ? "md:border-r border-gray-200" : ""
+              index !== stats.length - 1 ? "md:border-r border-[#00B760]" : ""
             }`}
           >
             <h2 className="text-[40px] lg:text-[56px] font-bold text-[#00B760] leading-none mb-2">
