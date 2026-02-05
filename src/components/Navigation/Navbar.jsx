@@ -18,7 +18,7 @@ const Navbar = () => {
       <nav className="container flex justify-between items-center py-4">
         {/* LOGO OPTION */}
         <Link to="/">
-          <img className='"max-w-[150px]"' src="/Logo.png" alt="" />
+          <img className='"max-w-[150px]"' src="/logo.svg" alt="logo" />
         </Link>
         {/* MENU OPTION--- */}
         <div className="hidden lg:block">
@@ -28,14 +28,14 @@ const Navbar = () => {
         <div className="hidden lg:block dot-content">
           <span className="dot"></span>
           <Button
-            style={`font-inter font-medium text-[16px] text-black leading-[145%] cursor-pointer rounded-md outline-1 outline-[#0DB760] py-4 px-6 shadow-md hover:bg-[#0DB760] hover:text-[white]`}
+            style={`font-inter font-medium text-[16px] text-black leading-[145%] cursor-pointer rounded-md outline-1 outline-[#0052CC] py-3 px-6 shadow-md hover:bg-[#0052CC] hover:text-[white]`}
             title="Download CV"
           />
         </div>
         {/* ICON */}
         <div
           onClick={toggler}
-          className="lg:hidden text-2xl text-[#0DB720] font-bold outline-1 p-2 rounded cursor-pointer hover:bg-[#00B720] hover:text-[white]"
+          className="lg:hidden text-2xl text-[#0052CC] font-bold outline-1 p-2 rounded cursor-pointer hover:bg-[#0052CC] hover:text-[white]"
         >
           <CgMenuRightAlt />
         </div>
@@ -52,7 +52,7 @@ const Navbar = () => {
           <Menu menuData={openMenu} togglerData={toggler} />
           <span
             onClick={toggler}
-            className="absolute top-5 right-5 text-xl text-[#00B270] outline p-2 rounded"
+            className="absolute top-5 right-5 text-xl text-[#0052CC] outline p-2 rounded hover:bg-[#0052CC] hover:text-white"
           >
             <MdOutlineClose />
           </span>

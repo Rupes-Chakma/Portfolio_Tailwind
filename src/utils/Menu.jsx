@@ -2,11 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 let menus = [
-  { id: 1, title: "Home", path: "/" },
-  { id: 2, title: "Aboute", path: "/aboute" },
-  { id: 3, title: "Skills", path: "/skills" },
-  { id: 4, title: "Portfolio", path: "/portfolio" },
-  { id: 5, title: "Testimonial", path: "/testimonial" },
+  { id: 1, title: "Aboute", path: "/" },
+  { id: 2, title: "Skills", path: "/Skills" },
+  { id: 3, title: "Project", path: "/Project" },
+  { id: 4, title: "Experience", path: "/Experience" },
+  { id: 5, title: "Contact", path: "/Contact" },
 ];
 
 const Menu = ({ menuData, togglerData }) => {
@@ -21,7 +21,7 @@ const Menu = ({ menuData, togglerData }) => {
           >
             <NavLink
               className={({ isActive }) =>
-                isActive ? "text-[#00b760]" : "text-black"
+                isActive ? "text-[#0052CC]" : "text-black"
               }
               to={menu.path}
             >

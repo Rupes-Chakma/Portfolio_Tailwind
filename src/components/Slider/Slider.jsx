@@ -13,17 +13,18 @@ const Slider = () => {
       <div className="container">
         <div className="lg:grid lg:grid-cols-3 gap-10">
           <div className=" col-span-1 flex flex-col gap-4 justify-center mb-5">
-            <p>Portfolio</p>
+            <span className="text-[#0052CC] font-semibold">Portfolio</span>
+
             <h2 className="text-[40px] font-semibold leading-[135%] font-inter text-[#000]">
               My Cretive Works Latest{" "}
-              <span className="text-[#0db620]">Project</span>
+              <span className="text-[#0052CC]">Project</span>
             </h2>
             <p className="">
               I heave selected and mentioned here some of my last project share
               with you
             </p>
             <Button
-              style={`font-inter font-medium text-[16px] text-white cursor-pointer rounded-md bg-[#0DB720] hover:bg-[#099119] py-3 px-8 shadow-md transition-all`}
+              style={`font-inter font-medium text-[16px] text-white cursor-pointer rounded-md bg-[#0052CC] hover:bg-[#0052CC] py-3 px-8 shadow-md transition-all`}
               title="Show More"
             />
           </div>
@@ -72,7 +73,7 @@ const Slider = () => {
               </SwiperSlide>
             </Swiper>
 
-            <div className="z-99 absolute  lg:bottom-0 lg:right-10 flex gap-10 lg:text-2xl text-[#2abf74] cursor-pointer">
+            <div className="z-99 absolute  lg:bottom-0 lg:right-10 flex gap-10 lg:text-2xl text-[#0052CC] cursor-pointer">
               <span className=" leftArrow bg-[#fff] p-2 rounded-full shadow">
                 <GoArrowLeft />
               </span>
